@@ -1,5 +1,5 @@
 function takeANumber (line, name) {
-  return `Welcome ${name}. You are number ${line.length+1} in line.`
+  return `Welcome, ${name}. You are number ${line.length+1} in line.`
 }
 
 function nowServing (line) {
@@ -8,7 +8,7 @@ function nowServing (line) {
   } else {
   var currentlyServing = line[0]
   line.shift()
-  return currentlyServing
+  return `Currently serving ${currentlyServing}.`
   }
 }
 
