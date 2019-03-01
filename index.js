@@ -3,5 +3,15 @@ function takeANumber (line, name) {
 }
 
 function nowServing (line) {
-  var currentlyServing = line
+  if (line.length === 0) {
+    return "There is nobody waiting to be served!"
+  } else {
+  var currentlyServing = line[0]
+  line.shift()
+  return currentlyServing
+  }
+}
+
+function currentLine(line) {
+  
 }
