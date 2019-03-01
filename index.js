@@ -18,7 +18,7 @@ function currentLine(line) {
   } else {
     neatList = []
     for (var i = 0; i < line.length; i++) {
-      neatList = ["i]
+      neatList = [...neatList, `${i+1}. ${line[i]}']
     }
     return `The line is currently: ${[neatList]}`
   }
