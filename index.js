@@ -18,7 +18,7 @@ function currentLine(line) {
   } else {
     neatList = []
     for (var i = 0; i < line.length; i++) {
-      
+      neatList
     }
     return "The line is currently: "
   }
