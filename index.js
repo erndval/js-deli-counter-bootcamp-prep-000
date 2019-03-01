@@ -1,4 +1,5 @@
 function takeANumber (line, name) {
+  line.push(name)
   return `Welcome, ${name}. You are number ${line.length+1} in line.`
 }
 
@@ -16,7 +17,7 @@ function currentLine(line) {
   if (line.length === 0) {
     return "The line is currently empty."
   } else {
-    neatList = []
+    var neatList = []
     for (var i = 0; i < line.length; i++) {
       neatList = [...neatList, `${i+1}. ${line[i]}`]
     }
